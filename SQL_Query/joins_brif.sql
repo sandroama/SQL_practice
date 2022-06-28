@@ -43,6 +43,13 @@ LEFT OUTER JOIN TableB
 ON TableA.name = TableB.name
 WHERE TableB.id IS null
 
+-- Ex1
+SELECT film.film_id, title, inventory_id, store_id
+FROM film
+LEFT JOIN inventory 
+ON inventory.film_id = film.film_id
+WHERE inventory.film_id IS null
+
 -- To produce the set of records only in Table A, but not in Table B, we perform the same left outer join, then exclude the records we don't want from the right side via a where clause.
 
 -- Unique
