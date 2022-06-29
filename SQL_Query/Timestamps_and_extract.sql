@@ -1,0 +1,5 @@
+-- Date Types:
+-- Time - Contains only Time
+-- Date - Contains only date
+-- TIMESTAMP - Date and time
+-- TIMESTAMPPTZ - Date and time and timezone
