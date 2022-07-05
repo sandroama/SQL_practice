@@ -32,3 +32,11 @@ ALTER COLUMN people DROP NOT NULL
 INSERT INTO new_info(title)
 VALUES
 ('Minions 22')
+
+
+INSERT INTO new_info(title)
+ALTER COLUMN people DROP NOT NULL
+
+INSERT INTO new_info(title)
+VALUES
+('Some new title')
