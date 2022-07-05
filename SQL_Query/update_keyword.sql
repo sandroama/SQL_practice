@@ -50,3 +50,13 @@ WHERE account_job.user_id = account.user_id
 UPDATE account
 SET last_log = CURRENT_TIMESTAMP
 RETURNING email, created_on, last_log
+
+
+INSERT INTO job(job_name)
+VALUES
+('King')
+returning job_id,job_name
+
+DELETE FROM job
+Where job_name = 'King'
+RETURNING job_id,job_name
